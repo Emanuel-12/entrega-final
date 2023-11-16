@@ -1,0 +1,49 @@
+
+
+<main>
+    <div class="m-5">
+        <h1 class="text-center">
+            Formulario de Registro
+        </h1>
+    </div>
+
+    <div class="container">
+        <!-- Content here -->
+        <form action="/create" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="m-5 text-center">
+                <button type="submit" class="btn btn-success w-50">Enviar Datos</button>
+                <button type="reset" class="btn btn-danger w-50 mt-4">Borrar Datos</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+<script src="/js/index.js"></script>
+
+
+{{!-- ejemplo de motor de plantillas de Pug --}}
+{{!-- 
+html
+    body
+        h1
+            | Este es el Inicio
+        main
+            block content
+        include footer
+        include messi
+        script(src="/js/index.js") 
+--}}
+

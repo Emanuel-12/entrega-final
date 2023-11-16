@@ -1,0 +1,86 @@
+
+    {{>navegacion}}
+
+  <div class="contenedor">
+        <img src="/assets/logo/logo2.png" alt="Logo">
+      </div>
+     
+    <div class="contenedorform">
+
+      <div id="prueba" ></div>
+      <div class="contenedorBotones">
+        
+        <button id="login" onclick="iniciarSeccion()">login</button>
+        <button id="registrarse" onclick="registrarusuario()">registrarse</button>
+      </div>
+      </div>
+
+      <script>
+
+         const prueba = document.getElementById("prueba");
+
+        const login = document.getElementById("login");
+        const registrarse = document.getElementById("registrarse");
+
+        const iniciarSeccion = () => {
+            prueba.innerHTML = `  <form id="formulario2" action="./datos" method="post">
+        <div class="formulario">
+        
+          <!--<div>
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usario" name="usuario" required>
+          </div> -->
+          <!-- <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div> -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- <div>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+          </div> -->
+          <div>
+            <label for="password"> password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="login">
+        </div>
+        </form>
+   `;
+        }
+        const registrarusuario = () => {
+            prueba.innerHTML = `  <form id="formulario2" action="./datos" method="post">
+        <div class="formulario">
+        
+          <div >
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usario" name="usuario" required>
+          </div>
+          <!-- <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div> -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- <div>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+          </div> -->
+          <div>
+            <label for="password"> password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="registrar">
+        </div>
+        </form>
+   `;
+        }
+
+    </script>
+
+    {{>footer}}
